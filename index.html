@@ -1,95 +1,124 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Our Menu</title>
-<style>
-
-/********** Base styles **********/
 * {
-  box-sizing: border-box;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	font-size: 106%;
 }
+
 h1 {
-  margin-bottom: 15px;
+	margin-top: 3%;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+h2 {
+	margin: 0px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	width: 40%;
+	font-size: 1.25em;
+	float: right;
+	right: 0px;
+	top: 0px;
+	text-align: center;
+}
+
+div {
+	margin: 1%;
+	border: 1px solid black;
+	position: relative;
+	background: grey;
 }
 
 p {
-  border: 1px solid black;
-  background-color: #808080;
-  width: 40%;
-  height: 20px;
-  margin-right: 0px;
-  margin-left: 140px;
-  font-family: Helvetica;
-  color: white;
+	padding: 3%;
+	clear: right;
 }
 
-/* Simple Responsive Framework. */
-.row {
-  width: 90%;
-  padding: 10px;
+div.chicken h2{
+	background: lightpink;
 }
 
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3{
-    float: left;
-    border: 2px solid black;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  }
+div.beef h2{
+	background: darkred;
+	color: white;
 }
 
-/********** Medium devices only **********/
+div.sushi h2{
+	background: moccasin;
+}
+
+/* Desktop version */
+@media (min-width:  992px) {
+	div {
+		width: 31%;
+		float: left;
+	}
+}
+
+/* Tablet version */
+@media (min-width: 768px) and (max-width: 991px) {
+	.chicken, .beef{
+		width: 48%;
+		margin-bottom: 2%;
+		float: left;
+	}
+
+	.sushi {
+		width: 98%;
+		clear: both;
+	}
+
+	.sushi h2 {
+		width: 20%;
+	}
+
+	.sushi p {
+		padding: 1.75%;
+	}
+}
+
+/* Mobile version */
 @media (max-width: 767px) {
-  .col-md-1, .col-md-2, .col-md-3{
-    float: left;
-    border: 2px solid black;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
+	div {
+		margin: 2%;
+	}
 }
-
-</style>
-</head>
-<body>
-<h1>Our Menu</h1>
-
-<div class="row">
-  <div class="col-lg-3 col-md-6"><p>Chicken</p>
-    <div id = "box">
-      <div id = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6"><p>Beef</p>
-    <div id = "box">
-      <div id = "content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6"><p>Sushi</p>
-    <div id = "box">
-      <div id = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Restaurant</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <div class="chicken">
+            <h2>Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="beef">
+            <h2>Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="sushi">
+            <h2>Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </body>
 </html>

@@ -1,15 +1,12 @@
-
-<!doctype html>
-<html lang="en">
-  <head>
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David Chu's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
   </head>
 <body>
   <header>
@@ -38,11 +35,11 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs ">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
-            <li id="navMenuButton">
+            <li id="navMenuButton" class=" active">
               <a href="#" onclick="$dc.loadMenuCategories();">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
@@ -72,7 +69,170 @@
   </div>
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
-  <div id="main-content" class="container"></div>
+  <div id="main-content" class="container"><h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+<div class="text-center">
+  Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
+</div><section class="row"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('L');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/L/L.jpg" alt="Lunch">
+      <span>Lunch</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('A');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/A/A.jpg" alt="Soup">
+      <span>Soup</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('B');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/B/B.jpg" alt="Appetizers">
+      <span>Appetizers</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('SP');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/SP/SP.jpg" alt="Chef's Recommendations">
+      <span>Chef's Recommendations</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('C');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/C/C.jpg" alt="Chicken">
+      <span>Chicken</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('F');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/F/F.jpg" alt="Beef">
+      <span>Beef</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('V');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/V/V.jpg" alt="Veal">
+      <span>Veal</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('DK');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/DK/DK.jpg" alt="Duck">
+      <span>Duck</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('VG');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/VG/VG.jpg" alt="Vegetables">
+      <span>Vegetables</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('CU');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/CU/CU.jpg" alt="Curry">
+      <span>Curry</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('NL');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/NL/NL.jpg" alt="Noodles (Lo Mein)">
+      <span>Noodles (Lo Mein)</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('NF');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/NF/NF.jpg" alt="Mei Fan (Very Fine Noodles)">
+      <span>Mei Fan (Very Fine Noodles)</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('PF');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/PF/PF.jpg" alt="Pan Fried Noodles">
+      <span>Pan Fried Noodles</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('FR');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/FR/FR.jpg" alt="Fried Rice">
+      <span>Fried Rice</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('CM');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/CM/CM.jpg" alt="Chow Mein">
+      <span>Chow Mein</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('FY');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/FY/FY.jpg" alt="Egg Foo Young">
+      <span>Egg Foo Young</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('SO');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/SO/SO.jpg" alt="Side Orders">
+      <span>Side Orders</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('DS');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/DS/DS.jpg" alt="Desserts">
+      <span>Desserts</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('D');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/D/D.jpg" alt="Dinner Combo">
+      <span>Dinner Combo</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('SR');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/SR/SR.jpg" alt="Sushi Menu">
+      <span>Sushi Menu</span>
+    </div>
+  </a>
+</div>
+</section></div>
 
   <footer class="panel-footer">
     <div class="container">
@@ -96,7 +256,7 @@
           <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
         </section>
       </div>
-      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+      <div class="text-center">© Copyright David Chu's China Bistro 2016</div>
     </div>
   </footer>
 
@@ -105,5 +265,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
-</body>
-</html>
+
+
+</body></html>
